@@ -1,0 +1,42 @@
+/* General Reset and Custom Properties */
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-dark-cyan: rgb(0, 135, 135);
+  --color-dark-cyan-transparent: rgba(0, 135, 135, 0.6);
+  --color-btn: rgb(103, 103, 103);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  display: block;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #00ffff;
+  background-image: linear-gradient(rgba(0, 255, 255, 0.7), rgba(0, 255,255, 0.6)), url(https://images.unsplash.com/photo-1651449816008-2cbdcf626b1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Main Styling */
