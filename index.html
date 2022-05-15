@@ -26,7 +26,7 @@
       <label for="email" id="email-label">Email</label>
       <input type="email" id="email" placeholder="Enter your email address" required>
       <label for="age" id="number-label">Age <span class="optional">(optional)</span></label>
-      <input type="number" id="age" placeholder="Define your age">
+      <input type="number" id="number" min="17" max="100" placeholder="Define your age">
       <label for="phone" id="phone-label">Phone Number</label>
       <input type="number" id="phone" placeholder="Enter your mobile phone number">
       <p class="label">What is your occupation?</p>
@@ -74,13 +74,13 @@
       </label>
       <p class="label">Would you recommend Hoho Studio to a friend?</p>
       <label for="" class="label-inline">
-        <input type="radio" name="recommend" class="inline" checked> Yes
+        <input type="radio" name="recommend" class="inline" value="yes" checked> Yes
       </label>
       <label for="" class="label-inline">
-        <input type="radio" name="recommend" class="inline"> No
+        <input type="radio" name="recommend" class="inline" value="no"> No
       </label>
       <label for="" class="label-inline">
-        <input type="radio" name="recommend" class="inline"> Maybe
+        <input type="radio" name="recommend" class="inline" value="maybe"> Maybe
       </label>
     </fieldset>
     <fieldset>
